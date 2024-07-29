@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.wrapper{
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid transparent;
+    width: 80%;
+    margin: 30px auto ;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: -4px 10px 10px rgba(0, 0, 0, 0.705);
+}
+/*styling the form section*/
+.form-section{
+    margin: 150px 50px 100px 50px;
+}
+.form-section h1{
+    font-size: 30px;
+    font-weight: bold;
+    margin: 40px 10px 0 10px;
+}
+.form-section p{
+    font-size: 10px;
+    color:grey;
+    margin: 0 10px 0 10px;
+}
+.form-section form{
+   margin: 30px 10px 40px 10px;
+   width: 100%;
+}
+form input{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+form input[type="submit"]{
+    background-color: rgba(0, 0, 255, 0.5);
+    font-weight: bold;
+    font-size: 16px;
+}
+.image-section{
+    border-radius: 10px;
+}
+.image-section img{
+    width:100%;
+    min-width: 300px;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+@media screen and (width > 1200px) and (width < 1500px){
+    form input{
+        width: 150%;
+        padding: 10px;
+    }
+}
+@media screen and (width > 1500px){
+    .image-section img{
+        width:100%;
+        min-width: 600px;
+    }
+    form input{
+        width: 200%;
+        padding: 10px;
+    }
+}
+@media screen and (width < 800px) {
+    .wrapper{
+        display: block;
+    }
+    .image-section{
+        display: none;
+    }
+    .form-section{
+        margin: 150px 50px 100px 25px;
+    }
+}
